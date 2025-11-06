@@ -314,32 +314,32 @@ const Footer = () => {
               {" "}
               {/* Added justify-center for better alignment on small screens */}
               <img
-                src="src\assets\humanCapital.jpeg"
+                src="/assets/humanCapital.jpeg"
                 alt="ISO 9001 Certified"
                 className="h-16 w-auto"
               />
               <img
-                src="src\assets\sio.jpeg"
+                src="/assets/sio.jpeg"
                 alt="ISO 14001 Certified"
                 className="h-16 w-auto"
               />
               <img
-                src="src\assets\ism.jpeg"
+                src="/assets/ism.jpeg"
                 alt="ISO 45001 Certified"
                 className="h-16 w-auto"
               />
               <img
-                src="src\assets\bcm.jpeg"
+                src="/assets/bcm.jpeg"
                 alt="ISO 27001 Certified"
                 className="h-16 w-auto"
               />
               <img
-                src="src\assets\cert.jpeg"
+                src="/assets/cert.jpeg"
                 alt="Another ISO Certification"
                 className="h-16 w-auto"
               />
               <img
-                src="src\assets\healthSafety.jpeg"
+                src="/assets/healthSafety.jpeg"
                 alt="Another ISO Certification"
                 className="h-16 w-auto"
               />
