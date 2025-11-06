@@ -1,0 +1,9 @@
+/* Tailwind v4 syntax */
+@import "tailwindcss/preflight";
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+
+@import "tailwindcss";
+::-webkit-scrollbar{
+  display: none;
+}
