@@ -410,7 +410,7 @@ const AboutUs = () => {
                   style={{ clipPath: "circle(50% at 50% 50%)" }}
                 >
                   <img
-                    src="src\assets\Mubassir Mohammed.jpeg"
+                    src="/assets/Mubassir-Mohammed.jpeg"
                     alt="Mubassir Mohammed"
                     className="w-full h-full object-cover"
                   />
