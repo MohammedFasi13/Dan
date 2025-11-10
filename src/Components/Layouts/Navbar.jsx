@@ -337,7 +337,7 @@ const Navbar = () => {
           {/* 1. Logo Section (Unchanged) */}
           <Link to="/" className="cursor-pointer" onClick={() => setIsMenuOpen(false)}>
             <div
-              className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 bg-[url('/src/assets/logo.png')] bg-contain bg-no-repeat bg-center"
+              className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 bg-[url('/assets/logo.png')] bg-contain bg-no-repeat bg-center"
               aria-label="Home"
             ></div>
           </Link>

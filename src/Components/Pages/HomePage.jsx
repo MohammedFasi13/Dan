@@ -8,6 +8,10 @@ import {
   RiMoneyDollarCircleFill,
   RiAddLine,
   RiSubtractLine,
+  RiLinkedinFill,
+  RiInstagramFill,
+  RiTwitterXFill,
+  RiFacebookFill,
 } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -37,7 +41,21 @@ const HomePage = () => {
   const faqData = [
       { q: "1. Is DAN International a registered company?", a: `Yes, DAN International Solutions operates under a valid Commercial Registration (CR No. 2050214572) in Saudi Arabia in partnership with Sadaa Al Tamkeen Human Resources Company, Dammam.<br>🔗 Check CR on Saudi Government Portal` },
       { q: "2. Does DAN International have a valid license in India?", a: "Our licensing process in India is currently under progress. We are in the final stages of obtaining all necessary approvals and licenses for domestic and international recruitment." },
-      { q: "3. Who is the founder of DAN International Solutions?", a: `DAN International Solutions was founded by Mr. Mubassir Mohammed, a certified recruitment expert with extensive experience in international talent acquisition.<br><b>Expertise & Platforms:</b><br>LinkedIn Recruiter<br>Naukri (Maestro/Gulf)<br>PMP (Project Management Professional)<br><b>Connect with Mr. Mubassir Mohammed:</b><br>LinkedIn: <a class="text-blue-500 hover:underline" href="https://www.linkedin.com/in/mubassir-mohammed-709894263/" target="_blank" rel="noopener noreferrer">View Profile</a><br>Instagram: <a class="text-blue-500 hover:underline" href="https://www.instagram.com/mubassir.mohammed.mm/" target="_blank" rel="noopener noreferrer">@mubassir.mohammed.mm</a><br>Twitter (X): <a class="text-blue-500 hover:underline" href="https://x.com/MubassirMo89563" target="_blank" rel="noopener noreferrer">@MubassirMo89563</a><br>Facebook: <a class="text-blue-500 hover:underline" href="https://www.facebook.com/share/1CFWEXVxRP/" target="_blank" rel="noopener noreferrer">Profile</a>` },
+      
+      // --- MODIFIED FAQ ITEM 3 ---
+      { 
+        q: "3. Who is the founder of DAN International Solutions?", 
+        a: `DAN International Solutions was founded by Mr. Mubassir Mohammed, a certified recruitment expert with extensive experience in international talent acquisition.<br><b>Expertise & Platforms:</b><br>LinkedIn Recruiter<br>Naukri (Maestro/Gulf)<br>PMP (Project Management Professional)<br><b>Connect with Mr. Mubassir Mohammed:</b>`,
+        // We add a 'socials' array to render as components
+        socials: [
+          { icon: <RiLinkedinFill />, href: "https://www.linkedin.com/in/mubassir-mohammed-709894263/", label: "View Profile" },
+          { icon: <RiInstagramFill />, href: "https://www.instagram.com/mubassir.mohammed.mm/", label: "@mubassir.mohammed.mm" },
+          { icon: <RiTwitterXFill />, href: "https://x.com/MubassirMo89563", label: "@MubassirMo89563" },
+          { icon: <RiFacebookFill />, href: "https://www.facebook.com/share/1CFWEXVxRP/", label: "Profile" }
+        ]
+      },
+      // --- END OF MODIFIED ITEM ---
+
       { q: "4. Is DAN International an Indian or Saudi company?", a: "DAN International Solutions is a Saudi-based company, headquartered in Dammam, led by Mr. Mubassir Mohammed in partnership with a local Saudi sponsor." },
       { q: "5. What type of business model does DAN International follow?", a: "Operates as an LLC under the Saudi Ministry of Commerce with licensed HR partners." },
       { q: "6. What services does DAN International provide?", a: `<ul class="list-disc ml-5 space-y-1"><li>Overseas recruitment</li><li>Domestic staffing</li><li>Executive search</li><li>Contract staffing</li><li>Project-based manpower supply</li><li>Workforce outsourcing</li><li>Payroll & Compliance</li></ul>` },
@@ -45,6 +63,7 @@ const HomePage = () => {
       { q: "8. Does DAN International charge candidates for overseas jobs?", a: "No. We comply with Saudi labor law—no illegal/unauthorized charges." },
       { q: "9. Is DAN International licensed by the Saudi Ministry of Human Resources?", a: "Yes, via partnership with Sadaa Al Tamkeen Human Resources Company." },
       { q: "10. How can I apply for a job through DAN International?", a: `You can apply through:<br>Website: <a href="https://www.daninternationalsolutions.com" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">daninternationalsolutions.com</a><br>Email: <a href="mailto:info@daninternational.com" class="text-blue-500 hover:underline">info@daninternational.com</a><br>WhatsApp: +966 566280420` },
+// ... (rest of your faqData)
       { q: "11. Can clients or companies hire through DAN International?", a: "Absolutely. We provide end-to-end recruitment solutions for companies looking to hire skilled or unskilled manpower from India, Pakistan, Nepal, Philippines, and other countries." },
       { q: "12. Is DAN International compliant with Saudi Labor Laws?", a: "Yes. We operate in full compliance with Saudi labor regulations and guidelines set by the Ministry of Human Resources and Social Development (HRSD)." },
       { q: "13. Where is DAN International located?", a: `📍 Address: P.O. Box 7529, Zuhair Ibn Qais, Ash Sulbah, Dammam -34271, Saudi Arabia` },
@@ -56,6 +75,8 @@ const HomePage = () => {
   return (
     <div className="bg-white">
       <main>
+        {/* ... (Your Banner, Carousel, About Us, Core Services sections are all correct) ... */}
+
         {/* BANNER SECTION */}
         <section className="min-h-[70vh] flex items-center justify-center text-center py-35 mt-15 px- ">
           <div>
@@ -155,9 +176,29 @@ const HomePage = () => {
                   </button>
                   <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaqIndex === index ? 'max-h-96 mt-4' : 'max-h-0'}`}>
                     <div
-                      className="text-gray-600"
+                      className="text-gray-600 space-y-2" // <-- MODIFIED (added space-y-2)
                       dangerouslySetInnerHTML={{ __html: item.a }}
                     />
+
+                    {/* --- ADDED THIS BLOCK TO RENDER SOCIALS --- */}
+                    {item.socials && (
+                      <div className="mt-4 flex flex-col space-y-3">
+                        {item.socials.map((social, sIndex) => (
+                          <a 
+                            key={sIndex} 
+                            href={social.href} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="flex items-center gap-3 text-blue-500 hover:underline transition-colors"
+                          >
+                            <span className="text-xl">{social.icon}</span>
+                            <span>{social.label}</span>
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                    {/* --- END OF ADDED BLOCK --- */}
+
                   </div>
                 </div>
               ))}
@@ -165,7 +206,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* SUPPORT CTA SECTION */}
+        {/* ... (Your Support CTA section is correct) ... */}
         <section className="py-16">
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-green-700 to-[#46B724] rounded-3xl p-12 text-center text-white shadow-xl">
             <span className="bg-white/20 text-white text-sm font-semibold px-4 py-1 rounded-full">
@@ -184,7 +225,7 @@ const HomePage = () => {
         </section>
       </main>
 
-     
+      
     </div>
   );
 };
