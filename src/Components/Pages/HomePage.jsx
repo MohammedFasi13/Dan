@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+// 🎯 FIX: Import Link from react-router-dom for proper client-side routing
+import { Link } from 'react-router-dom';
 import Carousel from './Carousel'
 import {
   RiTeamFill,
@@ -63,7 +65,6 @@ const HomePage = () => {
       { q: "8. Does DAN International charge candidates for overseas jobs?", a: "No. We comply with Saudi labor law—no illegal/unauthorized charges." },
       { q: "9. Is DAN International licensed by the Saudi Ministry of Human Resources?", a: "Yes, via partnership with Sadaa Al Tamkeen Human Resources Company." },
       { q: "10. How can I apply for a job through DAN International?", a: `You can apply through:<br>Website: <a href="https://www.daninternationalsolutions.com" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">daninternationalsolutions.com</a><br>Email: <a href="mailto:info@daninternational.com" class="text-blue-500 hover:underline">info@daninternational.com</a><br>WhatsApp: +966 566280420` },
-// ... (rest of your faqData)
       { q: "11. Can clients or companies hire through DAN International?", a: "Absolutely. We provide end-to-end recruitment solutions for companies looking to hire skilled or unskilled manpower from India, Pakistan, Nepal, Philippines, and other countries." },
       { q: "12. Is DAN International compliant with Saudi Labor Laws?", a: "Yes. We operate in full compliance with Saudi labor regulations and guidelines set by the Ministry of Human Resources and Social Development (HRSD)." },
       { q: "13. Where is DAN International located?", a: `📍 Address: P.O. Box 7529, Zuhair Ibn Qais, Ash Sulbah, Dammam -34271, Saudi Arabia` },
@@ -75,8 +76,6 @@ const HomePage = () => {
   return (
     <div className="bg-white">
       <main>
-        {/* ... (Your Banner, Carousel, About Us, Core Services sections are all correct) ... */}
-
         {/* BANNER SECTION */}
         <section className="min-h-[70vh] flex items-center justify-center text-center py-35 mt-15 px- ">
           <div>
@@ -123,7 +122,6 @@ const HomePage = () => {
     <h3 className="text-xl md:text-2xl font-medium text-gray-700 mb-10">
       Built on Trust, Focused on People, Powered by Opportunity.
     </h3>
-    {/* MODIFIED PART: The <p> tag is now much simpler */}
     <p className="text-xl text-gray-600 leading-relaxed whitespace-pre-wrap">
       {aboutUsText}
     </p>
@@ -206,7 +204,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* ... (Your Support CTA section is correct) ... */}
+        {/* SUPPORT CTA SECTION */}
         <section className="py-16">
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-green-700 to-[#46B724] rounded-3xl p-12 text-center text-white shadow-xl">
             <span className="bg-white/20 text-white text-sm font-semibold px-4 py-1 rounded-full">
@@ -218,14 +216,16 @@ const HomePage = () => {
             <p className="text-green-100 max-w-2xl mx-auto mb-8">
               Full-service recruitment, visa processing, and HR management – we don’t just advise, we execute.
             </p>
-            <a href="/contact" className="bg-white text-[#46B724] font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg">
+            {/* 🎯 FIX APPLIED HERE: Using <Link> instead of <a> for internal routing */}
+            <Link 
+              to="/contact" 
+              className="bg-white text-[#46B724] font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg"
+            >
               Contact Us
-            </a>
+            </Link>
           </div>
         </section>
       </main>
-
-      
     </div>
   );
 };
