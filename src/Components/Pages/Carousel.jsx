@@ -5,22 +5,22 @@ import React, { useState, useEffect, useCallback } from 'react';
 // You can replace these with your own images and content.
 const slides = [
   {
-    image: 'Untitled design (5).png',
+    image: '/assets/Untitleddesign5.png',
   },
   {
-    image: 'Untitled design (3).png',
+    image: '/assets/Untitleddesign3.png',
   },
   {
     image: 'https://images.goway.com/production/hero_image/AdobeStock_197282114.jpeg?VersionId=4hRP4p_4nfcCp9N1kKLynFZY5DYfmfc_',
   },
   {
-    image: 'Untitled design (4).png',
+    image: '/assets/Untitleddesign4.png',
   },
-   {
+  {
     image: 'https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2019/05/Balance-in-Bahrain-feature.jpg',
   },
-    {
-    image: 'https://assets.architecturaldigest.in/photos/68aee6b6c217baca2192039c/16:9/w_1616,h_909,c_limit/Untitled%20design%20-%202025-08-27T163622.470.png',
+  {
+    image: '/assets/Untitleddesign2.png',
   },
 ];
 
