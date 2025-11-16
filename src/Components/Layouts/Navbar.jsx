@@ -449,72 +449,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* 3. Unified Action Icons (Right - Unchanged) */}
-          <div className="nav-actions flex items-center gap-2 lg:gap-3 shrink-0">
-            {/* TRANSLATE BUTTON */}
-            <div
-              className={`relative ${
-                isTranslateOpen ? "translate-open" : "translate-closed"
-              } 
-                                      xl:block`}
-              ref={translateContainerRef}
-            >
-              <button
-                onClick={toggleTranslate}
-                aria-label="Change Language"
-                className={`bg-[#46B724] text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full text-lg lg:text-xl hover:opacity-90 transition-opacity z-[1025] 
-                                          ${
-                                            isTranslateOpen
-                                              ? "opacity-90"
-                                              : ""
-                                          }`}
-              >
-                <i className="ri-translate-2"></i>
-              </button>
 
-              <div id="google_translate_element" aria-hidden={!isTranslateOpen}>
-                {/* Google will inject the actual scrollable language list here */}
-              </div>
-            </div>
-
-            {/* Mobile Only: Hamburger Menu Icon */}
-            <div
-              className="hamburger xl:hidden flex flex-col gap-[6px] cursor-pointer z-[1030]"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              <div
-                className={`w-8 h-1 bg-[#46B724] rounded-full transition-transform duration-300 ${
-                  isMenuOpen ? "rotate-45 translate-y-[10px]" : ""
-                }`}
-              ></div>
-              <div
-                className={`w-8 h-1 bg-[#46B724] rounded-full transition-opacity duration-300 ${
-                  isMenuOpen ? "opacity-0" : ""
-                }`}
-              ></div>
-              <div
-                className={`w-8 h-1 bg-[#46B724] rounded-full transition-transform duration-300 ${
-                  isMenuOpen ? "-rotate-45 -translate-y-[10px]" : ""
-                }`}
-              ></div>
-            </div>
-
-            {/* Desktop Only: Contact Icons */}
-            <a
-              href="mailto:info@daninternational.com"
-              aria-label="Email Us"
-              className="bg-[#46B724] text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full text-lg lg:text-xl hover:opacity-90 transition-opacity hidden xl:flex"
-            >
-              <i className="ri-mail-line"></i>
-            </a>
-            <a
-              href="tel:+966566280420"
-              aria-label="Call Us"
-              className="bg-[#46B724] text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full text-lg lg:text-xl hover:opacity-90 transition-opacity hidden xl:flex"
-            >
-              <i className="ri-phone-line"></i>
-            </a>
-          </div>
+  
 
           {/* Mobile Menu (Full-Screen Overlay) */}
           <div
@@ -596,3 +532,74 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+          {/* 3. Unified Action Icons (Right - Unchanged) */}
+        // <div className="nav-actions flex items-center gap-2 lg:gap-3 shrink-0">
+        //     {/* TRANSLATE BUTTON */}
+        //     <div
+        //       className={`relative ${
+        //         isTranslateOpen ? "translate-open" : "translate-closed"
+        //       } 
+        //                               xl:block`}
+        //       ref={translateContainerRef}
+        //     >
+        //       <button
+        //         onClick={toggleTranslate}
+        //         aria-label="Change Language"
+        //         className={`bg-[#46B724] text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full text-lg lg:text-xl hover:opacity-90 transition-opacity z-[1025] 
+        //                                   ${
+        //                                     isTranslateOpen
+        //                                       ? "opacity-90"
+        //                                       : ""
+        //                                   }`}
+        //       >
+        //         <i className="ri-translate-2"></i>
+        //       </button>
+
+        //       <div id="google_translate_element" aria-hidden={!isTranslateOpen}>
+        //         {/* Google will inject the actual scrollable language list here */}
+        //       </div>
+        //     </div>
+
+        //     {/* Mobile Only: Hamburger Menu Icon */}
+        //     <div
+        //       className="hamburger xl:hidden flex flex-col gap-[6px] cursor-pointer z-[1030]"
+        //       onClick={() => setIsMenuOpen(!isMenuOpen)}
+        //     >
+        //       <div
+        //         className={`w-8 h-1 bg-[#46B724] rounded-full transition-transform duration-300 ${
+        //           isMenuOpen ? "rotate-45 translate-y-[10px]" : ""
+        //         }`}
+        //       ></div>
+        //       <div
+        //         className={`w-8 h-1 bg-[#46B724] rounded-full transition-opacity duration-300 ${
+        //           isMenuOpen ? "opacity-0" : ""
+        //         }`}
+        //       ></div>
+        //       <div
+        //         className={`w-8 h-1 bg-[#46B724] rounded-full transition-transform duration-300 ${
+        //           isMenuOpen ? "-rotate-45 -translate-y-[10px]" : ""
+        //         }`}
+        //       ></div>
+        //     </div>
+
+        //     {/* Desktop Only: Contact Icons */}
+        //     <a
+        //       href="mailto:info@daninternational.com"
+        //       aria-label="Email Us"
+        //       className="bg-[#46B724] text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full text-lg lg:text-xl hover:opacity-90 transition-opacity hidden xl:flex"
+        //     >
+        //       <i className="ri-mail-line"></i>
+        //     </a>
+        //     <a
+        //       href="tel:+966566280420"
+        //       aria-label="Call Us"
+        //       className="bg-[#46B724] text-white w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full text-lg lg:text-xl hover:opacity-90 transition-opacity hidden xl:flex"
+        //     >
+        //       <i className="ri-phone-line"></i>
+        //     </a>
+        //   </div>

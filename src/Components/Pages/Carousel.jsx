@@ -5,16 +5,16 @@ import React, { useState, useEffect, useCallback } from 'react';
 // You can replace these with your own images and content.
 const slides = [
   {
-    image: 'https://images.pexels.com/photos/2115367/pexels-photo-2115367.jpeg',
+    image: 'Untitled design (5).png',
   },
   {
-    image: 'https://upload.wikimedia.org/wikipedia/commons/8/80/Jeddah_Waterfront_2025_%28cropped%29.jpg',
+    image: 'Untitled design (3).png',
   },
   {
     image: 'https://images.goway.com/production/hero_image/AdobeStock_197282114.jpeg?VersionId=4hRP4p_4nfcCp9N1kKLynFZY5DYfmfc_',
   },
   {
-    image: 'https://media.tacdn.com/media/attractions-splice-spp-674x446/13/de/8f/7b.jpg',
+    image: 'Untitled design (4).png',
   },
    {
     image: 'https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2019/05/Balance-in-Bahrain-feature.jpg',

@@ -205,7 +205,7 @@ const AreaofExpertise = () => {
             </div>
             <div className="bg-white border border-green-200 rounded-xl shadow hover:shadow-xl transition duration-300">
               <img
-                src="https://images.unsplash.com/photo-1714974528693-f77f6fcc56af?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1714974528683-8940bd8311aa?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="SAP/ERP Consultants"
                 className="w-full h-48 object-cover rounded-t-xl"
               />
@@ -292,7 +292,7 @@ const AreaofExpertise = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white border border-green-200 rounded-xl shadow hover:shadow-xl transition duration-300">
               <img
-                src="https://plus.unsplash.com/premium_photo-1661962514398-67972a27208d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UGlwZWxpbmUlMjBFbmdpbmVlcnN8ZW58MHx8MHx8fDA%3D"
+                src="https://images.unsplash.com/photo-1749073668528-38ab64575f5d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fE9GRlNIT1JFfGVufDB8fDB8fHww"
                 alt="Pipeline Engineers"
                 className="w-full h-48 object-cover rounded-t-xl"
               />
@@ -316,7 +316,7 @@ const AreaofExpertise = () => {
             </div>
             <div className="bg-white border border-green-200 rounded-xl shadow hover:shadow-xl transition duration-300">
               <img
-                src="https://powerforwardwithpso.com/wp-content/uploads/2022/03/featured_oilandgas_energyaudit.jpg"
+                src="https://plus.unsplash.com/premium_photo-1682144333631-eac578433ea1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2lsJTIwYW5kJTIwZ2FzfGVufDB8fDB8fHww"
                 alt="QA/QC Inspectors"
                 className="w-full h-48 object-cover rounded-t-xl"
               />
@@ -329,7 +329,7 @@ const AreaofExpertise = () => {
             </div>
             <div className="bg-white border border-green-200 rounded-xl shadow hover:shadow-xl transition duration-300">
               <img
-                src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a5009c88003513.5dc983944cc52.jpg"
+                src="https://images.unsplash.com/photo-1690508313456-bf8c851e8319?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8T0ZGU0hPUkV8ZW58MHx8MHx8fDA%3D"
                 alt="Turnaround Specialists"
                 className="w-full h-48 object-cover rounded-t-xl"
               />
@@ -342,7 +342,7 @@ const AreaofExpertise = () => {
             </div>
             <div className="bg-white border border-green-200 rounded-xl shadow hover:shadow-xl transition duration-300">
               <img
-                src="https://img.freepik.com/premium-photo/natural-gas-power-plant-worker-checking-energy-production-inside-factory_308072-3321.jpg"
+                src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBldHJvbGV1bXxlbnwwfHwwfHx8MA%3D%3D"
                 alt="LNG Terminal Engineers"
                 className="w-full h-48 object-cover rounded-t-xl"
               />
@@ -526,7 +526,7 @@ const AreaofExpertise = () => {
             </div>
             <div className="bg-white border border-green-200 rounded-xl shadow hover:shadow-xl transition duration-300">
               <img
-                src="https://plus.unsplash.com/premium_photo-1663099209773-eacb29ba97d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D"
+                src="https://images.unsplash.com/photo-1517089152318-42ec560349c0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TWluaW5nfGVufDB8fDB8fHww"
                 alt="Structural Engineers"
                 className="w-full h-48 object-cover rounded-t-xl"
               />
